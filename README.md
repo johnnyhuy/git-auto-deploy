@@ -4,7 +4,7 @@ This is a lite script to automatically pull changes from the remote repository. 
 Getting Started
 ===
 
-# Prerequisites
+## Prerequisites
 This script needs the following requirements in order to run correctly.
 
 - Establish SSH key access to the selected git repository
