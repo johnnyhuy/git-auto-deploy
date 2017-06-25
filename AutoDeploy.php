@@ -9,6 +9,13 @@ define('TIMEZONE', "Australia/Melbourne");
 class AutoDeploy {
     private $_content, $_log, $_time, $_signature, $_hash, $_token, $_dir, $_remote;
 
+    /**
+     * Initialize all class variables and other housekeeping stuff
+     *
+     * @param dir Directory to git repo
+     * @param token Secret key used in webhook
+     * @param remote Select a remote to run git commands (default: origin)
+     */
     public function __construct($dir,  $token = null, $remote = "origin") {
         date_default_timezone_set(TIMEZONE);
 
@@ -24,6 +31,9 @@ class AutoDeploy {
         $this->_log("STARTED " . date("d/m/Y H:i:s", $this->_time) . ": Auto-Deploy");
     }
 
+    /**
+     * Close file before program ends
+     */
     public function __destruct() {
         $this->_log("Info: Ending script...");
         fputs($this->_log, "\n\n" . PHP_EOL);
