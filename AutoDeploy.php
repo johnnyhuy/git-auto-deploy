@@ -21,6 +21,7 @@ class AutoDeploy {
         $this->_token = $token;
         $this->_dir = $dir;
         $this->_remote = $remote;
+        $this->_log("STARTED " . date("d/m/Y H:i:s", $this->_time) . ": Auto-Deploy");
     }
 
     public function __destruct() {
