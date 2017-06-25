@@ -90,6 +90,8 @@ class AutoDeploy {
     }
 
     /**
+     * Check if the git local repo exists
+     *
      * @return boolean
      */
     private function _checkGit() {
