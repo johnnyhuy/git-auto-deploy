@@ -6,7 +6,6 @@ metadata:
   description: A simple website for Git Auto Deploy project
   tags:
     - php
-    - git
 spec:
   type: library
   lifecycle: experimental
