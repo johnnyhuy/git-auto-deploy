@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: git-auto-deploy
+  title: Git Auto Deploy
+  description: A simple website for Git Auto Deploy project
+  tags:
+    - php
+    - git
+spec:
+  type: library
+  lifecycle: experimental
+  owner: johnnyhuy
